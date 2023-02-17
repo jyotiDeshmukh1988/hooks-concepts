@@ -1,3 +1,4 @@
+/* use of the spread operator */
 import React, { useState } from 'react'
 
 const UseStateObject = () => {
