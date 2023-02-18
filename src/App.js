@@ -6,11 +6,12 @@ import UseStateObject from './components/UseStateObject';
 import UseStateTodolist from './components/UseStateTodolist';
 import ShortCircuitEvaluation from './components/ShortCircuitEvaluation';
 import BasicForm from './components/forms/BasicForm';
+import UseEffects1 from './components/useEffect/useEffects1';
 function App() {
-  console.log(useState())
+  //console.log(useState())
   return (
     <div className="App">
-      <BasicForm/>
+      <UseEffects1/>
     </div>
   );
 }
