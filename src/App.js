@@ -8,11 +8,12 @@ import ShortCircuitEvaluation from './components/ShortCircuitEvaluation';
 import BasicForm from './components/forms/BasicForm';
 import UseEffects1 from './components/useEffect/useEffects1';
 import UseEffects2 from './components/useEffect/useEffects2';
+import UseEffectApi from './components/useEffect/useEffectApi';
 function App() {
   //console.log(useState())
   return (
     <div className="App">
-      <UseEffects2/>
+      <UseEffectApi/>
     </div>
   );
 }
