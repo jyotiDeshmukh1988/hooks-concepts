@@ -6,8 +6,16 @@ const BasicForm = () => {
     const [formVal,setformVal] = useState([]);
     const formsubmit = (event) => {
         event.preventDefault();
-        //const newEntry = {email: email, password: password}
-        setformVal([...formVal,{email: email, password: password}])
+        if(email && password){
+             //const newEntry = {email: email, password: password}
+            setformVal([...formVal,{id:new Date().getTime().toString(),email, password}])
+            setEmail('')
+            setPassword('')
+        }
+        else{
+            alert('Please fill the values')
+        }
+       
     }
     console.log(formVal)
   return (
@@ -24,8 +32,9 @@ const BasicForm = () => {
         <button type='Submit'>Submit</button>
     </form>
     {
-        formVal.length > 0 && formVal.map((curr,item)=>{
-            return <p>Email: {curr.email} and Password: {curr.password}</p>
+        formVal.length > 0 && formVal.map((curr)=>{
+            const {id,email,password} = curr
+            return <p key={id}>Email: {email} and Password: {password}</p>
         })
     }
     </div>
