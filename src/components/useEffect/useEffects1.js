@@ -14,6 +14,7 @@ const UseEffects1 = () => {
     },[])
 
     console.log('Hello outside UseEffects')
+    
     const increment = () => {
         setCount(count+1)
     }
