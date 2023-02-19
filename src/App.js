@@ -10,11 +10,12 @@ import UseEffects1 from './components/useEffect/useEffects1';
 import UseEffects2 from './components/useEffect/useEffects2';
 import UseEffectApi from './components/useEffect/useEffectApi';
 import Uncontrolled from './components/forms/uncontrolled';
+import UseReducer from './components/useReducer/useReducer';
 function App() {
   //console.log(useState())
   return (
     <div className="App">
-      <UseEffectApi/>
+      <UseReducer/>
     </div>
   );
 }
