@@ -22,7 +22,7 @@ const UseEffectApi = () => {
     }
 
     useEffect(()=>{
-        getUsers();    
+        setTimeout(()=>{getUsers()},3000)   
     },[])
 
     if(loading){

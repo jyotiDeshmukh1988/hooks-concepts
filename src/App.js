@@ -9,11 +9,12 @@ import BasicForm from './components/forms/BasicForm';
 import UseEffects1 from './components/useEffect/useEffects1';
 import UseEffects2 from './components/useEffect/useEffects2';
 import UseEffectApi from './components/useEffect/useEffectApi';
+import Uncontrolled from './components/forms/uncontrolled';
 function App() {
   //console.log(useState())
   return (
     <div className="App">
-      <UseEffectApi/>
+      <Uncontrolled/>
     </div>
   );
 }

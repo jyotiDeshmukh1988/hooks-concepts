@@ -36,6 +36,7 @@ p {
 h1 {
   font-size: 7rem;
   text-transform: capitalize;
+  color: #000;
 }
 
 .h1style {
