@@ -1,14 +1,26 @@
-import React, { useState } from 'react'
+import React, { useReducer, useState } from 'react'
 import './reducers.css'
 
 const UseReducer = () => {
-  const [count,setCount] = useState(0)
+  const initialState = 5
+  const reducer = (state,action) => {
+      console.log(state,action)
+      switch (action.type) {
+        case 'INCREMENT': 
+        return state = state + action.count
+        case 'DECREMENT': 
+        return state = state - action.count
+      }
+      
+      return state
+  }
+  const [state,dispatch] = useReducer(reducer,initialState)
   return (
     <div>
-      <p>{count}</p>
+      <p>{state}</p>
       <div className="btnStylePosition">
-        <button onClick={()=>setCount(count+1)}>Increment</button>
-        <button onClick={()=>count > 0 ? setCount(count-1) : ''}>Decrement</button>
+        <button onClick={()=>dispatch({type:'INCREMENT',count : 10})}>Increment</button>
+        <button onClick={()=>dispatch({type:'DECREMENT',count : 5})}>Decrement</button>
       </div>
     </div>
   )
