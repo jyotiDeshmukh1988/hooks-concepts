@@ -14,7 +14,7 @@ function App() {
   //console.log(useState())
   return (
     <div className="App">
-      <Uncontrolled/>
+      <UseEffectApi/>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { FaUserTie } from 'react-icons/fa';
+/* https://react-icons.github.io/react-icons/icons?name=bs */
 const GithubUsers = ({users}) => {
   return (
     users.map((user) =>{
@@ -10,7 +11,7 @@ const GithubUsers = ({users}) => {
             <div className="d-flex align-items-center">
                 <div className="image"> <img src={avatar_url} className="rounded" width="155" alt={login}/> </div>
                     <div className="ml-3 w-100">
-                        <h4 className="mb-0 mt-0 textLeft">{login}</h4><span className="text-left">{type}</span>
+                        <h4 className="mb-0 mt-0 textLeft">{login} <FaUserTie/></h4><span className="text-left">{type}</span>
                             <div className="p-2 mt-2 bg-primary d-flex justify-content-between rounded text-white stats">
                                 <div className="d-flex flex-column">
                                     <span className="articles">Articles</span> <span className="number1">38</span> </div>

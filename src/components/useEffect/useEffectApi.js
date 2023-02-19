@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import GithubUsers from './github/githubUsers';
 import Loading from './github/loading';
+
 const UseEffectApi = () => {
 
     const [users,setUsers] = useState([]);
