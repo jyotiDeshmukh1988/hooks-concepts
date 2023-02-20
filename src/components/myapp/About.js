@@ -1,7 +1,8 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom'
 const About = () => {
     const location = useLocation()
+    const history = useHistory()
   return (
     <div>
         <h1>Hello {location.pathname.replace("/",'')} page</h1>
@@ -10,6 +11,8 @@ const About = () => {
             <p>Hi, good to see you again</p> : 
             <p>Login to see your files</p>
         }
+        <button className="btn btn-primary" onClick={()=>history.goBack()}>Go Back</button>
+        <br/><button className="btn btn-primary" onClick={()=>history.push('/index')}>HomePage</button>
     </div>
   )
 }
