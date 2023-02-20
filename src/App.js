@@ -14,13 +14,14 @@ import UseReducer from './components/useReducer/useReducer';
 import ConA from './components/useContext/ConA';
 import Customhook from './components/customHooks/useTitleCount';
 import UseCustomhook from './components/customHooks/UseCustomHook';
+import Home from './components/myapp/Home';
 const ctx = createContext();
 function App() {
   //console.log(useState())
   const myvalue = "usage of the useContext hook"
   return (
     <div className="App">
-      <UseCustomhook/>
+      <Home/>
     </div>
   );
 }
