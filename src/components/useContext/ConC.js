@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ctx } from '../../App'
 
 const ConC = () => {
+  const myname = useContext(ctx)
   return (
-    <div>ConC</div>
+    <div>
+      <h2>Con c is {myname}</h2>
+    </div>
   )
 }
 
